@@ -63,8 +63,6 @@ public class AlertaController {
 
         alerta.setErro(erroAlerta.get());
 
-        System.out.println("ahsudugtwy");
-        System.out.println(alertaDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(alertaRepository.save(alerta));
     }
 
